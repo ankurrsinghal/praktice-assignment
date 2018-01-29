@@ -46,6 +46,8 @@ body{
 .slot-item a {
     font-size: 36px;
     font-weight: 300;
+    text-decoration: underline;
+    cursor: pointer;
     color: #000000;
 }
 

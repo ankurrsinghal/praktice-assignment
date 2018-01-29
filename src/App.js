@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { findDOMNode } from 'react-dom';
 import './App.css';
 import data from './data.json';
 
@@ -41,7 +40,7 @@ class App extends Component {
                   const noSlotsAvailable = slot.date_slots.length === 0 ? 'no-slot-available' : '';
                   return (
                     <div key={index} className={`${noSlotsAvailable} slot-item`}>
-                      <a onClick={(e) => { e.preventDefault(); this.onDateSlotClick(slot) }} href="#" className="slot-link">{slot.date}</a>
+                      <a onClick={(e) => { e.preventDefault(); this.onDateSlotClick(slot) }} className="slot-link">{slot.date}</a>
                     </div>
                   )
                 })
@@ -59,7 +58,7 @@ class App extends Component {
                     dateSlot.date_slots.map((slot, key) => {
                       return (
                         <div className={`slot-item`} key={key}>
-                          <a onClick={(e) => { e.preventDefault(); this.onHourSlotClick(slot); }} href="#">{slot.hour}</a>
+                          <a onClick={(e) => { e.preventDefault(); this.onHourSlotClick(slot); }}>{slot.hour}</a>
                         </div>
                       )
                     })
@@ -82,7 +81,7 @@ class App extends Component {
                       const title = Object.keys(slot)[0];
                       return (
                         <div className={`slot-item`} key={key}>
-                          <a onClick={(e) => { e.preventDefault(); alert(`Congratulations ${title} has been alloted to you`); }} href="#">{title}</a>
+                          <a onClick={(e) => { e.preventDefault(); alert(`Congratulations ${title} has been alloted to you`); }}>{title}</a>
                         </div>
                       )
                     })
