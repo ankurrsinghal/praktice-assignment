@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    padding: 2em;
+    font-family: 'Rubik', sans-serif;
+    background: #f9fafa;
+}
+
+.title {
+    text-align: center;
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.slot-columns {
+    margin-top: 2em;
+    padding: 1em 4em;
+    background: #ffffff;
+    border-radius: 4px;
+    box-shadow:  0 0 4px 1px rgba(0,0,0,0.1);
+}
+
+.slot-column {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 2em;
+}
+
+.slot-column h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.slot-column:first-child {
+    padding-left: 0;
+}
+
+.slot-column:last-child {
+    padding-right: 0;
+}
+
+.slot-item {
+    padding: 1em 0;
+}
+
+.slot-item a {
+    font-size: 36px;
+    font-weight: 300;
+    color: #000000;
+}
+
+.no-slot-available {
+    
+}
+
+.no-slot-available a {
+    text-decoration: line-through;
+    pointer-events: none;       
+}
+
+
+
+/* #slot-wrapper,
+#slot .slot-item {
+  height: 100px;
+  line-height: 100px;
+  color: white;
+}
+
+#slot .slot-item:nth-of-type(1) {-webkit-transform: rotateX(0deg)   translateZ(86px);}
+#slot .slot-item:nth-of-type(2) {-webkit-transform: rotateX(52deg)  translateZ(86px);}
+#slot .slot-item:nth-of-type(3) {-webkit-transform: rotateX(104deg) translateZ(86px);}
+#slot .slot-item:nth-of-type(4) {-webkit-transform: rotateX(156deg) translateZ(86px);}
+#slot .slot-item:nth-of-type(5) {-webkit-transform: rotateX(208deg) translateZ(86px);}
+#slot .slot-item:nth-of-type(6) {-webkit-transform: rotateX(260deg) translateZ(86px);}
+#slot .slot-item:nth-of-type(7) {-webkit-transform: rotateX(312deg) translateZ(86px);}
+
+#slot[data-state="1"] .slot-item:nth-of-type(1),
+#slot[data-state="2"] .slot-item:nth-of-type(2),
+#slot[data-state="3"] .slot-item:nth-of-type(3),
+#slot[data-state="4"] .slot-item:nth-of-type(4),
+#slot[data-state="5"] .slot-item:nth-of-type(5),
+#slot[data-state="6"] .slot-item:nth-of-type(6),
+#slot[data-state="7"] .slot-item:nth-of-type(7) { opacity: 1; }
+
+#slot-wrapper {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    width: 50%;
+    text-align: center;
+    perspective: 1100px;
+  }
+  
+  #slot {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    transform-style: preserve-3d;
+    transition: all 1s;
+  }
+  
+  #slot .slot-item {
+    display: block;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    opacity: .2;
+    transition: all 1s;
+    backface-visibility: hidden;
+  } */
